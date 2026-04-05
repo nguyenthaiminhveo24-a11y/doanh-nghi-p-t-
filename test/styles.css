@@ -1,0 +1,86 @@
+CSS
+
+/* Tổng thể trang web */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Tiêu đề trên cùng */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Phần Banner ảnh */
+.banner {
+    width: 100%;
+    max-width: 1000px;
+    /* Giới hạn độ rộng để không bị vỡ ảnh */
+    margin: 20px auto;
+    display: block;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    /* Bo góc nhẹ cho ảnh */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Tạo bóng đổ cho sang trọng */
+}
+
+/* Nội dung chính */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Danh sách menu các đường link */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #5d2d91;
+    /* Màu tím tương đồng với logo */
+    font-weight: 500;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    /* Thay thế các đường kẻ đen dày bằng đường kẻ mảnh */
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào link */
+.menu-list a:hover {
+    padding-left: 10px;
+    color: #e65100;
+    /* Chuyển màu cam khi hover giống màu logo */
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Bỏ đường kẻ ở link cuối cùng */
+.menu-list a:last-child {
+    border-bottom: none;
+}
